@@ -121,3 +121,20 @@ btnEl.addEventListener('click', function () {
     secondPasswordEl.textContent += characters[randomIndex()];
   }
 });
+
+// Theme changer
+
+const themeChangerEl = document.querySelector('.theme-changer');
+const contentDivEl = document.querySelector('.content');
+const titleEl = document.querySelector('.title');
+const subtitleEl = document.querySelector('.subtitle');
+const pwContainerParagraphEl = document.querySelector('.p-pw_container');
+// const textInputEl = document.querySelector('.input-pw_container');
+
+themeChangerEl.addEventListener('click', function () {
+  contentDivEl.classList.toggle('mode-light_div');
+  titleEl.classList.toggle('mode-light_h1');
+  subtitleEl.classList.toggle('mode-light_p');
+  pwContainerParagraphEl.classList.toggle('mode-light_p');
+  //   textInputEl.classList.toggle('mode-light_input');
+});
